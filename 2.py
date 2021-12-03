@@ -29,7 +29,6 @@ def get_second_solution():
         elif direction == "forward":
             route["position"] += int(steps)
             route["depth"] += int(steps) * aim
-    print(route)
     print(route["position"] * abs(route["depth"]))
 
 
