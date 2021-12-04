@@ -16,10 +16,9 @@ def parse_inpt():
 def check_boards(boards, draws):
     winners = []
     for board in boards:
-        diag = [board[i][i] for i in range(5)]
         cols = [board[i] for i in range(5)]
         rows = [board[:][i] for i in range(5)]
-        all_entries = [diag] + cols + rows
+        all_entries = cols + rows
         for row in all_entries:
             if sum([x in draws for x in row]) == 5:
                 winners.append(board)
