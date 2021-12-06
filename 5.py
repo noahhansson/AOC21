@@ -1,4 +1,5 @@
 import utils
+import time
 
 def range_plus(start, stop, step = 1):
     #Extends the range iterator to handle negative differences natively
@@ -35,5 +36,11 @@ def get_second_solution():
     print(len(overlaps))
 
 if __name__ == "__main__":
-    get_first_solution()
-    get_second_solution()
+    start_time = time.time()
+    for x in range(10):
+        get_first_solution()
+    print((time.time() - start_time)/10)
+    start_time = time.time()
+    for x in range(10):
+        get_second_solution()
+    print((time.time() - start_time)/10)
