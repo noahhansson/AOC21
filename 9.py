@@ -2,15 +2,6 @@ import utils
 
 inpt = utils.read_input("9")
 inpt = [list(line) for line in inpt]
-test_inpt = [
-    list("2199943210"),
-    list("3987894921"),
-    list("9856789892"),
-    list("8767896789"),
-    list("9899965678"),
-]
-
-#inpt = test_inpt
 
 def is_lower(value, neighbor_values):
     return all([value < neighbor for neighbor in neighbor_values])

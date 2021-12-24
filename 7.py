@@ -1,10 +1,7 @@
 import utils
-import matplotlib.pyplot as plt
 
 inpt = utils.read_input("7")
 inpt = [int(val) for val in inpt[0].split(",")]
-
-test_inpt = [16,1,2,0,4,2,7,1,2,14]
 
 
 def get_first_solution():
@@ -26,8 +23,6 @@ def get_second_solution():
             best_pos_fuel = fuel_cost
 
     print(best_pos_fuel)
-
-
 
 if __name__ == "__main__":
     get_first_solution()

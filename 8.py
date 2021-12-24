@@ -39,7 +39,6 @@ def decode_number(number, digit_map):
         if set(number) == digit:
             return idx
 
-
 def get_first_solution():
     inpt_1 = [line.split(" | ")[1] for line in inpt]
     n_digits = 0
